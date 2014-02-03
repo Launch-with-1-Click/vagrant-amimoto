@@ -16,10 +16,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     aws.keypair_name      = ENV['AWS_EC2_KEYPAIR']
 
     aws.region = "ap-northeast-1"
-    aws.ami = "ami-9160da90"
+    aws.ami = "ami-29d54d28"
 
-    aws.security_groups = 'default'
-    aws.instance_type = "m1.medium"
+    #aws.security_groups = 'default'
+    aws.instance_type = "t1.micro"
 
     override.ssh.username = "ec2-user"
     override.ssh.private_key_path = ENV['AWS_EC2_KEYPAIR_PATH']
