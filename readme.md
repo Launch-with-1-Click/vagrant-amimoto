@@ -24,10 +24,15 @@ $ vagrant plugin install vagrant-aws
 
 ### 6. Set shell environment variables to .bash_profile like below.
 
+You should create IAM user for the Vagrant.
+
 ```
+# https://console.aws.amazon.com/iam/home#home
 export AWS_ACCESS_KEY="your aws access key"
 export AWS_SECRET_ACCESS_KEY="your aws secret key"
-export AWS_EC2_KEYPAIR="your key pairs" # https://console.aws.amazon.com/ec2/v2/home#KeyPairs:
+
+# https://console.aws.amazon.com/ec2/v2/home#KeyPairs:
+export AWS_EC2_KEYPAIR="your key pairs"
 export AWS_EC2_KEYPAIR_PATH="/path/to/.ssh/id_rsa"
 ```
 
