@@ -8,6 +8,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "dummy"
   config.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
 
+  config.vm.synced_folder ".", "/vagrant", type: "rsync"
+  config.ssh.pty = true
+
 
   ## AWS
   config.vm.provider :aws do |aws, override|
@@ -18,7 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     aws.region = "ap-northeast-1"
     aws.ami = "ami-29d54d28"
 
-    #aws.security_groups = 'default'
+    aws.security_groups = 'default'
     aws.instance_type = "t1.micro"
 
     override.ssh.username = "ec2-user"
