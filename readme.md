@@ -46,7 +46,7 @@ $ git clone https://github.com/Launch-with-1-Click/vagrant-wordpress.git
 ### 6. Change into a new directory.
 
 ```
-$ cd vagrant-concrete5
+$ cd vagrant-wordpress
 ```
 
 ### 7. Start a Vagrant environment.
