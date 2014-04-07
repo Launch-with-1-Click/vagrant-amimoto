@@ -40,13 +40,13 @@ $ source .bash_profile
 ### 5. Clone the repository into a local directory.
 
 ```
-$ git clone https://github.com/Launch-with-1-Click/vagrant-wordpress.git
+$ git clone git@github.com:Launch-with-1-Click/vagrant-amimoto.git
 ```
 
 ### 6. Change into a new directory.
 
 ```
-$ cd vagrant-concrete5
+$ cd vagrant-amimoto
 ```
 
 ### 7. Start a Vagrant environment.
