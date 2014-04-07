@@ -54,3 +54,29 @@ $ cd vagrant-concrete5
 ```
 $ vagrant up
 ```
+
+## Sample IAM policy
+
+The following example policy allows vagrant to launch instance but denies terminate, shutdown, reboot instance.
+
+```
+{
+  "Statement": [
+    {
+      "Sid": "Stmtxxxxxxxxx",
+      "Action": [
+        "ec2:RunInstances",
+        "ec2:DescribeInstances",
+        "ec2:DescribeKeyPairs",
+        "ec2:DescribeImages",
+        "ec2:CreateTags",
+        "ec2:DescribeTags"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
+```
