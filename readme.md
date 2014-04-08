@@ -72,7 +72,7 @@ $ vagrant up
       ],
       "Effect": "Allow",
       "Resource": [
-        "arn:aws:ec2:*"
+        "*"
       ]
     }
   ]
