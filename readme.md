@@ -6,6 +6,8 @@ Amimoto WordPressStack greatly simplifies the development and management of Word
 WordPress is a content management platform that allows users to easily publish, manage, and organize a wide variety of content on a website.
 Amimoto Stack includes ready-to-run versions of WordPress. It is completely integrated and configured, so you’ll be ready to start developing your WordPress as soon as the AMI is launched onto Amazon EC2.
 
+[http://megumi-cloud.com/](http://megumi-cloud.com/)
+
 ## Getting Started
 
 ### 1. Install VirtualBox.
