@@ -59,7 +59,7 @@ $ cd vagrant-amimoto
 ### 7. Start a Vagrant environment.
 
 ```
-$ vagrant up
+$ vagrant up --provider=aws
 ```
 
 ## Sample IAM policy
