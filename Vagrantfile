@@ -14,6 +14,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   ## AWS
   config.vm.provider :aws do |aws, override|
+    aws.tags = {
+      'Name' => 'vagrant-amimoto'
+    }
+
     aws.access_key_id     = ENV['AWS_ACCESS_KEY']
     aws.secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
     aws.keypair_name      = ENV['AWS_EC2_KEYPAIR']
