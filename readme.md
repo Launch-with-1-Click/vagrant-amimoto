@@ -1,4 +1,4 @@
-# Vagarnt WordPress (Amimoto)
+# Vagrant WordPress (Amimoto)
 
 ## Description
 
